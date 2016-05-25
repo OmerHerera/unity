@@ -9,7 +9,7 @@ const test = addAssertions(tape, {jsxEquals});
 // Component to test
 import Button from './../src/Button';
 
-test('----- React Component Tests: Button -----', (t) => {
+test('React Component Tests: Button', (t) => {
 
     // Shallow rendering: Render React element only *one* level deep
     const component = createComponent.shallow(<Button label="Button" />);
