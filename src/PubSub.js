@@ -21,6 +21,15 @@ let PubSub = {
             },
             getJSONData (index) {
                 return data [index];
+            },
+            fetch (url, callback) {
+                let err = null;
+                if (!url) {
+                    err = 'Wrong URL ! ! ! !';
+                    callback(err);
+                    return;
+                }
+                callback(err, "This is Ok!");
             }
         });
     }
